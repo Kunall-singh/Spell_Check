@@ -1,0 +1,132 @@
+:root {
+  --primary-bg: #f9f9f9;
+  --secondary-bg: #ffffff;
+  --accent-color: #e0e0e0;
+  --text-dark: #333333;
+  --text-muted: #777777;
+  --highlight-color: #4a90e2;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--highlight-color);
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: var(--highlight-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--highlight-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a7bd5;
+}
+
+.suggestions-container {
+  margin-top: 20px;
+}
+
+.suggestions-container h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--accent-color);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--accent-color);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+  background-color: #f0f0f0;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #777; /* Grey text */
+  font-size: 0.9rem;
+}
+
+footer hr {
+  border: 0;
+  height: 1px;
+  background: #ccc; /* Light grey line */
+  margin-bottom: 10px;
+}
